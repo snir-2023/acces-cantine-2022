@@ -2,6 +2,11 @@
 #define LEDS_H
 
 #include <iostream>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/ioctl.h>
+#include <fcntl.h>
+#include "vsopenrisc.h"
 
 #define ROUGE 0x01
 #define BLEU 0x02

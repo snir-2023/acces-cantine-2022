@@ -43,13 +43,16 @@ int main()
     fichierLog.enregistre(infos);
 
     if (nom!="inconnu") { //l'utilisateur est connu
-        if (statut=='A') { //utilisateur autorisé à recevoir un plateau
+        if (statut=='A') { //utilisateur autorisï¿½ ï¿½ recevoir un plateau
             buzzer.bip(1);
             voyants.allumer(VERT);
             leds.allumer(VERT);
             afficheur.afficher(nom);
             distributeur.distribuer();
-        } else { //utilisateur non autorisés
+            leds.allumer(BLEU+VERT);
+            sleep(1);
+            leds.allumer(VERT);
+        } else { //utilisateur non autorisï¿½s
             buzzer.bip(2);
             voyants.allumer(ROUGE);
             leds.allumer(ROUGE);

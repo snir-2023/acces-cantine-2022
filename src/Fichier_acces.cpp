@@ -26,6 +26,7 @@ string Fichier_acces::rechercheInfos(string code) {
     string lesInfos="inconnu;R";
     while (! finDeFichier()) {
         string ligne = lire1ligne();
+        cout << ligne << endl;
         string ID = extraireID(ligne);
         if (ID==code) {
             lesInfos=extraireInfos(ligne);
