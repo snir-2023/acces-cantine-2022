@@ -4,7 +4,7 @@ using namespace std;
 
 Voyants::Voyants()
 {
-    cout << "Classe Voyants creee" << endl;
+    cout << "Voyants cree" << endl;
     //ctor
 }
 
@@ -14,5 +14,5 @@ Voyants::~Voyants()
 }
 
 void Voyants::allumer(int couleur) {
-    cout << "allumer les voyants en couleur " << couleur << endl;
+    cout << "Allumer voyant en couleur " << couleur << endl;
 }

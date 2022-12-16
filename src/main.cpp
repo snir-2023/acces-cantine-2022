@@ -1,12 +1,13 @@
 #include <iostream>
-#include "Leds.h"
-#include "Afficheur.h"
-#include "Buzzer.h"
+
 #include "Distributeur.h"
-#include "Fichier_acces_csv.h"
-#include "Fichier_acces_log.h"
 #include "Lecteur.h"
+#include "Afficheur.h"
 #include "Voyants.h"
+#include "Leds.h"
+#include "Fichier_acces.h"
+#include "Fichier_log.h"
+#include "Buzzer.h"
 
 using namespace std;
 
@@ -14,53 +15,53 @@ string nom;
 char statut;
 
 void extraireInfos(string infos) {
-    nom=infos.substr(0,infos.length()-2);
+    cout << "on extrait les infos de " << infos << endl;
     statut=infos[infos.length()-1];
+    nom=infos.substr(0,infos.length()-2);
+    cout << " nom:" << nom << " statut:" << statut << endl;
 }
 
 int main()
 {
-    Leds leds;
-    Afficheur afficheur;
-    Buzzer buzzer;
-    Distributeur distributeur;
+    Distributeur distributeur; //instanciation de distributeur
     Lecteur lecteur;
+    Leds leds;
     Voyants voyants;
-    Fichier_acces_csv fichier_csv;
-    Fichier_acces_log fichier_log;
+    Buzzer buzzer;
+    Afficheur afficheur;
+    Fichier_acces fichierAcces;
+    Fichier_log fichierLog;
+
+    cout << endl << endl;
 
     string code;
     string infos;
 
-    cout << endl << endl;
-
     code=lecteur.lire();
-    cout << "le lecteur me retourne le code "<< code << endl;
-    infos=fichier_csv.demandeInfos(code);
-    cout << "les infos du code " << code << " sont:" << infos << endl;
+    infos=fichierAcces.demandeInfos(code);
     extraireInfos(infos);
-    cout << "le nom est " << nom << " et le statut " << statut << endl;;
-    fichier_log.enregistre(infos);
+    fichierLog.enregistre(infos);
 
     if (nom!="inconnu") { //l'utilisateur est connu
-        if (statut=='A') { //utilisateur est autorisé
+        if (statut=='A') { //utilisateur autorisé à recevoir un plateau
             buzzer.bip(1);
             voyants.allumer(VERT);
             leds.allumer(VERT);
             afficheur.afficher(nom);
             distributeur.distribuer();
-        } else { //utilisateur non autorisé
+        } else { //utilisateur non autorisés
             buzzer.bip(2);
             voyants.allumer(ROUGE);
             leds.allumer(ROUGE);
             afficheur.afficher(nom);
         }
-    } else { //l'utilisateur est inconnu
-        buzzer.bip(3);
-        voyants.allumer(ROUGE);
-        leds.allumer(ROUGE);
-        afficheur.afficher("inconnu");
+    } else { //utilisateur inconnu
+            buzzer.bip(3);
+            voyants.allumer(ROUGE);
+            leds.allumer(ROUGE);
+            afficheur.afficher("inconnu");
     }
 
+    cout << "Hello world!" << endl;
     return 0;
 }

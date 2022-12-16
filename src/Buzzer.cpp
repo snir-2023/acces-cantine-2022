@@ -1,10 +1,11 @@
 #include "Buzzer.h"
 
+
 using namespace std;
 
 Buzzer::Buzzer()
 {
-    cout << "Classe Buzzer creee" << endl;
+    cout << "Buzzer cree" << endl;
     //ctor
 }
 
@@ -14,5 +15,5 @@ Buzzer::~Buzzer()
 }
 
 void Buzzer::bip(int nb) {
-    cout << "bip " << nb << " fois" << endl;
+    cout << "on bippe " << nb << " fois" << endl;
 }

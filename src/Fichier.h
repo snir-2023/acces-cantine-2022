@@ -14,11 +14,13 @@ class Fichier
         void ouvrir(string nom, char mode);
         void fermer();
         void ecrireLigne(string texte);
+        string lire1ligne();
+        bool finDeFichier();
 
     protected:
 
     private:
-        ofstream fichier;
+        fstream fichier;
 };
 
 #endif // FICHIER_H

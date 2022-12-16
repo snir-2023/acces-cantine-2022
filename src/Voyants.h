@@ -3,9 +3,9 @@
 
 #include <iostream>
 
-#define VERT 0x04
 #define ROUGE 0x01
 #define BLEU 0x02
+#define VERT 0x04
 
 class Voyants
 {

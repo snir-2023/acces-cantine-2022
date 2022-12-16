@@ -4,7 +4,7 @@ using namespace std;
 
 Afficheur::Afficheur()
 {
-    cout << "Classe Afficheur creee" << endl;
+    cout << "Afficheur cree" << endl;
     //ctor
 }
 

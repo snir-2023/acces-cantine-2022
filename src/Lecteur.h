@@ -14,6 +14,7 @@ class Lecteur
     protected:
 
     private:
+        string code;
 };
 
 #endif // LECTEUR_H

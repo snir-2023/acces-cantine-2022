@@ -4,7 +4,7 @@ using namespace std;
 
 Distributeur::Distributeur()
 {
-    cout << "Classe Distributeur creee" << endl;
+    cout << "Distributeur cree" << endl;
     //ctor
 }
 
@@ -14,5 +14,5 @@ Distributeur::~Distributeur()
 }
 
 void Distributeur::distribuer() {
-    cout << "Distribution d'un plateau" << endl;
+    cout << "Distribuer un plateau" << endl;
 }

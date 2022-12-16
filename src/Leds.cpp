@@ -4,7 +4,7 @@ using namespace std;
 
 Leds::Leds()
 {
-    cout << "Classe Leds creee" << endl;
+    cout << "Leds cree" << endl;
     //ctor
 }
 
@@ -14,5 +14,5 @@ Leds::~Leds()
 }
 
 void Leds::allumer(int couleur) {
-    cout << "allumer les leds en couleur " << couleur << endl;
+    cout << "Allumer leds en couleur " << couleur << endl;
 }

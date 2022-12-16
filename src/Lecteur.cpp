@@ -4,8 +4,8 @@ using namespace std;
 
 Lecteur::Lecteur()
 {
-    cout << "Classe Lecteur creee" << endl;
-    //ctor
+    cout << "Lecteur cree" << endl;
+   //ctor
 }
 
 Lecteur::~Lecteur()
@@ -14,6 +14,7 @@ Lecteur::~Lecteur()
 }
 
 string Lecteur::lire() {
-    cout << "lire une carte. On retourne 1234" << endl;
-    return "1234";
+    code="1234";
+    cout << "lire la carte. On retourne " << code << endl;
+    return code;
 }
