@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1670225944 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\afficheur.cpp
+	"Afficheur.h"
+
+1669977047 c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\afficheur.h
+	<iostream>
+
+1669976969 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\buzzer.cpp
+	"Buzzer.h"
+
+1669976911 c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\buzzer.h
+	<iostream>
+
+1670575842 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\fichier_acces.cpp
+	"Fichier_acces.h"
+
+1670574638 c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\fichier_acces.h
+	<iostream>
+	"Fichier.h"
+
+1671182983 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\fichier_log.cpp
+	"Fichier_log.h"
+
+1670572173 c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\fichier_log.h
+	<iostream>
+	<ctime>
+	"Fichier.h"
+
+1670576006 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\lecteur.cpp
+	"Lecteur.h"
+
+1669977343 c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\lecteur.h
+	<iostream>
+
+1670226024 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\leds.cpp
+	"Leds.h"
+
+1670225535 c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\leds.h
+	<iostream>
+
+1669976512 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\distributeur.cpp
+	"Distributeur.h"
+
+1669976428 c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\distributeur.h
+	<iostream>
+
+1669976818 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\voyants.cpp
+	"Voyants.h"
+
+1670225521 c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\voyants.h
+	<iostream>
+
+1670228409 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\main.cpp
+	<iostream>
+	"Distributeur.h"
+	"Lecteur.h"
+	"Afficheur.h"
+	"Voyants.h"
+	"Leds.h"
+	"Fichier_acces.h"
+	"Fichier_log.h"
+	"Buzzer.h"
+
+1670575985 source:c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\fichier.cpp
+	"Fichier.h"
+
+1670574993 c:\datas\travail\bts snir\tp\boitiers vscom\tp prog5 - passage en poo - ctrl acces cantine\version2022\acces_cantine2\fichier.h
+	<iostream>
+	<fstream>
+

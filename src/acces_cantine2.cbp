@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="acces_cantine2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/acces_cantine2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="./" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Afficheur.cpp" />
+		<Unit filename="Afficheur.h" />
+		<Unit filename="Buzzer.cpp" />
+		<Unit filename="Buzzer.h" />
+		<Unit filename="Distributeur.cpp" />
+		<Unit filename="Distributeur.h" />
+		<Unit filename="Fichier.cpp" />
+		<Unit filename="Fichier.h" />
+		<Unit filename="Fichier_acces.cpp" />
+		<Unit filename="Fichier_acces.h" />
+		<Unit filename="Fichier_log.cpp" />
+		<Unit filename="Fichier_log.h" />
+		<Unit filename="Lecteur.cpp" />
+		<Unit filename="Lecteur.h" />
+		<Unit filename="Leds.cpp" />
+		<Unit filename="Leds.h" />
+		<Unit filename="Voyants.cpp" />
+		<Unit filename="Voyants.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
